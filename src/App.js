@@ -1,25 +1,54 @@
-import logo from './logo.svg';
 import './App.css';
+import List from './components/List'
+import Profile from './components/Profile';
+import Subscriptions from './components/Subscribtions';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+	return (
+    <div className="todo">
+        <aside className="todo__sidebar">
+            <Profile />
+            <List items = {[
+                {  
+                    id: 1,
+                    color: "#e68080",
+                    name: "asdsadsa"
+                },
+                {   
+                    id: 2,
+                    color: "#FFBBCC",
+                    name: "asdsadsa"
+                },
+                {   
+                    id: 3,
+                    color: "#C9D1D3",
+                    name: "asdsadsa"
+                },
+                {   
+                    id: 4,
+                    color: "#C9D1D3",
+                    name: "asdsadsa",
+                    active: true
+                },
+                {   
+                    id: 5,
+                    color: "#B6E6BD",
+                    name: "asdsadsa"
+                },
+                {   
+                    id: 6,
+                    color: "#64C4ED",
+                    name: "asdsadsa"
+                },
+                
+            ]}/>
+            
+        </aside>
+        <main className="todo__content">
+            
+        </main>
     </div>
-  );
+    );
 }
 
 export default App;
