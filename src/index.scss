@@ -49,15 +49,40 @@ code {
 			background-color: #00000016;
 		}
 		span {
-			max-width: 140px;
-			overflow: hidden;
+			max-width: 100px;
+			text-overflow: ellipsis;
+  			overflow: hidden;
+  			white-space: nowrap;
 		}
+		
 	}
 
 	&__list-icon {
 		margin-right: 6px;
 	}
 	
+	.btn-delete {
+		text-align: right;
+		margin-left: auto;
+		svg:hover {
+			stroke: #e68080;
+			fill: #e68080;
+		}
+	}
+	.btn-add {
+		opacity: 0.3;
+		color: #000000;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+		span {
+			margin-left: 10px;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+	}
 }
 
 
